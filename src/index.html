@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body class="bg-zinc-900">
+    <nav class="fixed h-full z-10 ">
+        <div class="container flex h-full">
+            <div class="linkHolder bg-black text-white w-56 p-5 h-full relative flex flex-col justify-between">
+                <ul class="links">
+                    <li class="my-4"><a onclick="showSearchPage()" href="#searchSection" id="search">search</a></li>
+                    <li class="my-4"><a onclick="getCategories()" href="#" id="categories">categories</a></li>
+                    <li class="my-4"><a onclick="getArea()" href="#area" id="areas">area</a></li>
+                    <li class="my-4"><a onclick="getIngredients()" href="#ingredientsSection"
+                            id="ingredients">ingredients</a></li>
+                    <li class="my-4"><a href="#contactSection" id="contact">contact us</a></li>
+                </ul>
+                <div class="detailsHolder">
+                    <div class="IconHolder flex space-x-2">
+                        <a href><i class="fa-brands fa-facebook"></i></a>
+                        <a href><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                    <div class="text-sm mt-4">
+                        Copyright © 2019 All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+
+            <div id="openMenu" class="cardHolder absolute left-56 text-2xl cursor-pointer h-full  ">
+                <div class="flex flex-col w-24 bg-white border-solid border items-center justify-between h-full">
+                    <div class="inset-y-1/2 absolute p-2"><i class="fa-solid fa-bars openMenuIcon"></i></div>
+                    <div><img src="/img/logo.png" class="w-48" alt></div>
+                    <div class="flex flex-col">
+                        <a href><i class="fa-solid fa-globe"></i></a>
+                        <a href><i class="fa-solid fa-share-nodes"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="HomePage" class=" block ">
+        <div class="container mx-auto px-10  pt-14   ">
+            <div id="HomeBody" class="grid grid-cols-12 gap-9 mx-auto px-20">
+
+            </div>
+        </div>
+    </section>
+    <section id="categoriesSection" class="px-24 hidden">
+        <div class="container ps-16 pt-14 mx-auto  ">
+            <div id="categoriesBody" class="grid grid-cols-12 gap-9  ">
+
+            </div>
+        </div>
+    </section>
+    <section id="area" class="px-24 hidden mx-auto">
+        <div class="container ps-16 pt-14 mx-auto ">
+            <div id="areaBody" class="grid grid-cols-12 gap-9 ">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="DetailsPage" class="">
+        <div class="container mx-auto py-52 ">
+            <div id="detailsBody" class="grid grid-cols-12 gap-x-10 lg:px-20 md:px-10  text-white  ">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="p-24">
+        <div class="container mx-auto text-center">
+            <div class="grid grid-cols-12 gap-9 " id="searchBody">
+
+            </div>
+    </section>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="/src/main.js"></script>
+</body>
+
+</html>
